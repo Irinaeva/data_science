@@ -32,18 +32,18 @@
 :arrow_up:[к оглавлению](https://github.com/Irinaeva/data_science/blob/main/Project_0/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Этапы работы над проектом  
-В ходе реализации проекта были установлены 2 переменные min и max 0 и 100. Цикл while начинал от 50. Если число было больше загаданного, то присваиваем переменной min новое значение. Если число было меньше загаданного, то присваиваем занчение max  новое значение [код](https://github.com/Irinaeva/data_science/blob/main/Project_0/game.py).
+В ходе реализации проекта были выбран метод бинарного поиска. Были установлены 3 переменные left, right и center для индексов. Была уставлена последовательность number_range от 1 до 100. Для подсчета попыток был установлен счетчик count, который записывает количество итераций. В цикле while начинали искать число от середины последовательности. Если загаданное число было больше/ меньше середины, то отбрасывали половину последовательности. Далее сдвигали индексы left, right  по последовательности и center, с которм сравнивали искомое число. Когда center равнялся искомому числу, цикл заканчивает свою работу. [код](https://github.com/Irinaeva/data_science/blob/main/Project_0/game.py).
 
 
 :arrow_up:[к оглавлению](https://github.com/Irinaeva/data_science/blob/main/Project_0/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Результаты:  
-По [результатам опробирования](https://github.com/Irinaeva/data_science/blob/main/Project_0/game.ipynb) алгоритм справляется за 5 попыток.
+По [результатам опробирования](https://github.com/Irinaeva/data_science/blob/main/Project_0/game.ipynb) алгоритм справляется за 4 попытки.
 
 :arrow_up:[к оглавлению](https://github.com/Irinaeva/data_science/blob/main/Project_0/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Выводы:
-Метод работает 
+Метод бинарного поиска работает меньше чем за 20 попыток в последовательности от 1 до 100
 
 :arrow_up:[к оглавлению](https://github.com/Irinaeva/data_science/blob/main/Project_0/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
