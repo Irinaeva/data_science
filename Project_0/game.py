@@ -13,20 +13,24 @@ def game_core_v3(number: int = 1) -> int:
         int: Число попыток
     """
     
+    # Бинарный поиск и подсчет количества итераций 
     count = 0
-    number = np.random.randint(1, 101)
-    min = 0
-    max = 100
-
-    while True:
-        predict = round((min+max)/2)
+    number_range = list(range(1, 101))
+    left = 0
+    right = len(number_range) - 1
+    center = (left + right) // 2
+    
+    # Цикл остановится когда искомое значение будет равно переменной center или когда цикл дойдет до конца (0 или 100)
+    # и не найдет число. Чтобы вывести результат -> print(number, number_range[center])
+    while number_range[center] != number:
         count += 1
-        if number == predict:
+        if number > number_range[center]:
+            left = center + 1
+        else:
+            right = center - 1
+        center = (left + right) // 2
+        if left >= right:
             break
-        elif number > predict:
-            min = predict
-        elif number < predict:
-            max = predict
     
     return count
 
